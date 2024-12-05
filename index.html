@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="." />
+    <meta charset="UTF-8">
+    <title>Password Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-title"></div>
+            <div class="header-controls">
+                <div class="level-counter">Level: <span id="level">1</span></div>
+                <button class="reset-button" onclick="resetGame()">Reset Game</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>The Password Challenge</h1>
+        <p>Create a password that meets the requirements! New rules will appear as you complete existing ones.</p>
+        
+        <input type="text" class="password-input" placeholder="Enter your password" autocomplete="off">
+        
+        <div id="rules"></div>
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        <source src="background-music.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
