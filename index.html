@@ -22,14 +22,13 @@
         <p>Create a password that meets the requirements! New rules will appear as you complete existing ones.</p>
         
         <input type="text" class="password-input" placeholder="Enter your password" autocomplete="off">
-        
+        <audio id="background-music" loop>
+            <source src="background-music.mp3" type="audio/mpeg">
+            <source src="background-music.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>        
         <div id="rules"></div>
     </div>
-    <audio id="background-music" autoplay loop>
-        <source src="background-music.mp3" type="audio/mpeg">
-        <source src="background-music.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
     <script src="script.js"></script>
 </body>
 </html>
