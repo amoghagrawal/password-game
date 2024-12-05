@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const music = document.getElementById('background-music');
+  const passwordInput = document.querySelector('.password-input');
+  let musicStarted = false;
+
+  passwordInput.addEventListener('focus', () => {
+      if (!musicStarted) {
+          music.play().catch(error => {
+              console.error('Error starting audio:', error);
+          });
+          musicStarted = true;
+      }
+  });
+
+  passwordInput.addEventListener('input', () => {
+      if (!musicStarted) {
+          music.play().catch(error => {
+              console.error('Error starting audio:', error);
+          });
+          musicStarted = true;
+      }
+  });
+});
+
 const passwordInput = document.querySelector('.password-input');
     const rulesContainer = document.getElementById('rules');
     const levelCounter = document.getElementById('level');
